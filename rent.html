@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renting</title>
+    <link rel="stylesheet" href="rentstyle.css">
+</head>
+<body>
+    <div id="nav">
+        <img src="logo.jpg" alt="image not flound">
+        <h4><a style="text-decoration: none;color: white;" href="index.html">home</a></h4>
+        <h4><a style="text-decoration: none;color: white;" href="becomemember.html">become member</a></h4>
+        <h4><a style="text-decoration: none;color: white;" href="food.html">food</a></h4>
+        <h4><a style="text-decoration: none;color: white;" href="rent.html">rent</a></h4>
+    </div>
+    <section class="popular" id="popular">
+
+        <h1 class="heading"> Buy-<span>Rent</span> Golf </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <span class="price">Rs 50 per Piece</span>
+                <img src="golfball.jpg" alt="">
+                <h3>Buy Golf Balls</h3>
+                <button type="submit" class="ball" onclick="pay()">Buy Now</button>
+            </div>
+            <div class="box">
+                <span class="price">Rs 5000 per Piece</span>
+                <img src="golfstick.jpg" alt="">
+                <h3>Buy Golf Stick</h3>
+                <button type="submit" class="ball" onclick="pay()">Buy Now</button>
+            </div>
+            <div class="box">
+                <span class="price"> Rs 100 per Hour </span>
+                <img src="golfstick.jpg" alt="">
+                <h3>Rent Golf Stick</h3>
+                <button type="submit" class="ball" onclick="pay()">Rent Now</button>
+            </div>
+            <div class="box">
+                <span class="price"> Rs 1000 per Hour </span>
+                <img src="cartgolf.jpg" alt="">
+                <h3>Rent Golf Cart</h3>
+                <button type="submit" class="ball" onclick="pay()">Rent Now</button>
+            </div>
+            <div class="box">
+                <span class="price"> Rs 10000 per Hour </span>
+                <img src="couse.jpg" alt="">
+                <h3>Rent Mini GOLF course</h3>
+                <button type="submit" class="ball" onclick="pay()">Rent Now</button>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="review" id="review">
+
+        <h1 class="heading"> our customers <span>reviews</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="person1.jpg" alt="">
+                <h3>john deo</h3>
+                <p>This golf course is a picturesque paradise with well-groomed greens and impeccable service. A must-visit for both beginners and seasoned players!</p>
+            </div>
+            <div class="box">
+                <img src="person2.jpg" alt="">
+                <h3>Nirmal patel</h3>
+                <p>Stunning course layout, pristine greens, and fantastic staff make every swing here a delight. A golfer's paradise indeed!</p>
+            </div>
+            <div class="box">
+                <img src="person3.jpg" alt="">
+                <h3>RDJ</h3>
+                <p>An absolute gem of a course - stunning views and top-notch maintenance. Can't wait to tee off here again!</p>
+            </div>
+
+        </div>
+
+    </section>
+    <script>
+        function pay(){
+            var digits = Math.floor(Math.random() * 9000000000) + 1000000000;
+            confirm("Invoice No:"+digits+'\n'+'Please Pay Amount at counter')
+        }
+    </script>
+</body>
+</html>

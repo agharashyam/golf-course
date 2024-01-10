@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BECOME MEMBER</title>
+    <link rel="stylesheet" type="text/css" href="becomemember.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="container a-container" id="a-container">
+          <form class="form" id="a-form" method="post" action="index.html">
+            <h2 class="form_title title">Become Member</h2>
+            <input class="form__input" type="text" pattern="[a-zA-z]{3,15}" placeholder="Name" name ="username" required>
+            <input class="form__input" type="email" placeholder="Email" name="email" required>
+            <input class="form__input" type="password" placeholder="Password" name="password" required>
+            <button class="form__button button switch-btn" type='submit' name ="signup" onclick="money()">SIGN UP</button>
+          </form>
+        </div>
+        <div class="switch" id="switch-cnt">
+            <div class="switch__container" id="switch-c1">
+                <h2 class="switch__title title">Welcome !</h2>
+                <p class="switch__description description">To Become Member with us please login with your personal info</p>
+                <button class="switch__button button switch-btn"><a href="index.html" style="text-decoration: none;color: white;">GO TO HOME PAGE</a></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function money(){
+            var digits = Math.floor(Math.random() * 9000000000) + 1000000000;
+            confirm("Member id:"+digits+'\n'+'Please Pay membership fees at counter')
+        }
+    </script>
+</body>
+</html>
